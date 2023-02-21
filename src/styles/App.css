@@ -1,0 +1,145 @@
+section{
+  position: relative;
+  padding: 40px 20px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section:first-child{
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+section:first-child h1{
+  margin: 0;
+}
+
+section:first-child h1 span{
+  color: blueviolet;
+}
+
+.gnerator{
+  width: 95%;
+  display: flex;
+  gap: 15px;
+}
+
+.gnerator input{
+  padding: 12px;
+  width: 80%;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+.gnerator input:focus{
+  outline-color: blueviolet;
+}
+
+.gnerator input::selection{
+  background-color: blueviolet;
+  color: white;
+}
+
+.gnerator button, .download{
+  padding: 12px 15px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all .2s ease-in-out;
+}
+
+.gnerator button:active, .download:active{
+  transform: scale(.8);
+}
+
+.gnerator button:hover, .download:hover{
+  transform: scale(1.04);
+}
+
+.qrcode{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.qrcode p{
+  font-size: small;
+  color: #adadad;
+}
+
+.qrcode p span{
+  color: #bf88f3;
+}
+
+.logo{
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  width: 40px;
+  background-image: url("../../public/assets/YB.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .4;
+}
+
+section:last-child{
+  gap: 20px;
+}
+
+.applogo{
+  height: 200px;
+  width: 200px;
+  background-image: url("../../public/assets/app-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.download{
+  text-decoration: none;
+}
+
+.download .fi{
+  margin-right: 2px;
+}
+
+.QR{
+  background-color: #fff;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:  900px){
+  section{
+    width: 100%;
+  }
+
+  .QR{
+    size: 180px !important;
+    height: 190px;
+  }
+  .qrcode{
+   margin-top: 20px; 
+  }
+
+  section:last-child{
+    padding: 0;
+    gap: 5px;
+    height: 40%;
+  }
+
+  .applogo{
+    display: none;
+  }
+}

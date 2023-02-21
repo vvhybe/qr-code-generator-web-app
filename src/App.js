@@ -44,7 +44,7 @@ function App() {
         <p>Click The <span>QR</span> Code to save it</p>
       </div>
       }
-      <a className='logo' target={"_blank"} rel="noreferrer" href='https://github.com/whybe7'></a>
+      <a className='logo' target={"_blank"} rel="noreferrer" href='https://github.com/whybe7'> </a>
     </section>
     <section>
       <div className='applogo'></div>

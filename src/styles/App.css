@@ -91,6 +91,7 @@ section:first-child h1 span{
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .4;
+  cursor: pointer;
 }
 
 section:last-child{
